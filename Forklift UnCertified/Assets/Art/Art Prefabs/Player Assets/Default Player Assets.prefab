@@ -319,6 +319,8 @@ GameObject:
   - component: {fileID: 2866976093621370719}
   - component: {fileID: 2217766455328143086}
   - component: {fileID: 3414547583610947099}
+  - component: {fileID: 8645347077422755015}
+  - component: {fileID: 3834202844835074345}
   m_Layer: 0
   m_Name: Default Player Lift
   m_TagString: Untagged
@@ -392,6 +394,40 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8645347077422755015
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3477693041657080339}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5044862, y: 0.8066177, z: 0.34828597}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3834202844835074345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3477693041657080339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed988d910a4f2a498184f7043894b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxHeld: 0
 --- !u!1 &3547983069906248752
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.WSA;
 
 public class Button : MonoBehaviour
 {
+
+    public GameObject activatableObject;
 
     public float requiredWeight = 1f;
     private float currentWeight = 0;
@@ -73,6 +76,11 @@ public class Button : MonoBehaviour
 
             transform.localPosition = Vector3.Lerp(new Vector3(0, startY, 0), new Vector3(0, weightedEnd + EndY, 0), timer);
 
+            if (timer > 1 && activatableObject.TryGetComponent<IActivatable>(out IActivatable triggeredElement))
+            {
+                triggeredElement.Activate();
+            }
+
         }
         else if( !weighed && timer < 1)
         {
@@ -84,6 +92,9 @@ public class Button : MonoBehaviour
 
             transform.localPosition = Vector3.Lerp(new Vector3(0, weightedEnd + EndY, 0), new Vector3(0, startY, 0), timer);
 
+
+            if (timer > 1 && activatableObject.TryGetComponent(out IActivatable triggeredElement))
+                triggeredElement.Deactivate();
 
         }
 

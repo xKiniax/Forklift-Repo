@@ -34,7 +34,7 @@ public class BeginnerCheatSheet : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
 
         myinfo.myAge = 26;
@@ -105,7 +105,7 @@ public class BeginnerCheatSheet : MonoBehaviour
 
     }
 
-    public void DoMath(int firstNumber, int secondNumber)
+    public virtual void DoMath(int firstNumber, int secondNumber)
     {
 
         int newNumber = firstNumber + secondNumber;

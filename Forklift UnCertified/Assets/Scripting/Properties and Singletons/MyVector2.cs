@@ -20,6 +20,27 @@ public class MyVector2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+    }
+
+    public float SquareMagnitude
+    {
+        get { return x * x + y * y; }
+    }
+
+    public float Magnitude
+    {
+        get { Mathf.sqrt(SquareMagnitude); return Mathf.Sqrt(); }
+    }
+
+    public float AngleX
+    {
+        get { return Mathf.Tan(y / x); }
+    }
+
+    public float AngleY
+    {
+        get { return Mathf.Tan(x / y); }
     }
 
 }

@@ -28,10 +28,10 @@ public class MyVector2 : MonoBehaviour
         get { return x * x + y * y; }
     }
 
-    public float Magnitude
-    {
-        get { Mathf.sqrt(SquareMagnitude); return Mathf.Sqrt(); }
-    }
+    // public float Magnitude
+    // {
+    //     get { Mathf.sqrt(SquareMagnitude); return Mathf.Sqrt(); }
+    // }
 
     public float AngleX
     {

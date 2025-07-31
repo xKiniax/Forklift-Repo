@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 5397675426764254521}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.07289815, z: 1.7911304}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0, y: 0.07289815, z: 1.79113}
+  m_LocalScale: {x: 1, y: 0.7479, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6256385832783211}
@@ -110,8 +110,8 @@ Transform:
   m_GameObject: {fileID: 7682090082781999806}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.07289815, z: 1.7911304}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0, y: 0.07289815, z: 1.79113}
+  m_LocalScale: {x: 1, y: 0.7479, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6256385832783211}
@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 6256385832783211}
   - component: {fileID: 1471496249478939787}
   - component: {fileID: 6338206758222022071}
+  - component: {fileID: 1982143965371351161}
   m_Layer: 0
   m_Name: J Door Frame
   m_TagString: Untagged
@@ -251,3 +252,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &1982143965371351161
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8441651432688198366}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b38c61367b5d52e429331469c35e6d41, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
